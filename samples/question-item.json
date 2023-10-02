@@ -1,0 +1,35 @@
+{
+    "$schema": "../schemas/question-schema.jschema",
+    "id": "6af15f0e-409b-4cf7-be2e-b0704b319a76",
+    "answer": {
+        "answerType": "SINGLE_CORRECT",
+        "choices": [
+            "<p class=\"choice_paragraph \">tried to train the birds to fly to their perches.</p>\n",
+            "<p class=\"choice_paragraph \">studied videos to determine why the birds no longer hopped.</p>\n",
+            "<p class=\"choice_paragraph \">observed how the birds dealt with gradually steeper inclines.</p>\n",
+            "<p class=\"choice_paragraph \">consulted with other researchers who had studied Chukar Partridges.</p>\n"
+        ],
+        "isCorrect": "c",
+        "rationale": "<p>Choice C is the best answer. The author explains that Dial&rsquo;s &ldquo;aha moment&rdquo; came when he determined the Chukars used &ldquo;their wings and legs cooperatively&rdquo; to scale the hay bales (lines 40-42). Dial then created additional experiments to study how the birds dealt with gradually steeper inclines: &ldquo;[he filmed] the birds as they raced up textured ramps tilted at increasing angles&rdquo; (lines 46-48).<p>Choices A, B, and D are incorrect because Dial&rsquo;s &ldquo;aha moment&rdquo; was not followed by Dial teaching the birds to fly, studying videos to find out why the birds no longer hopped, or consulting with other researchers.</p><p>&nbsp;</p></p>\n",
+        "video": "https://beec-lms-videos.s3.amazonaws.com/sat-sats/test-3/reading/question-26-solution.mp4"
+    },
+    "assetType": "QUESTION",
+    "createdAt": "2023-07-31T13:37:53.191Z",
+    "orderId": 26,
+    "passageId": "8f068d40-e838-4c37-9fc2-ca323e147dfb",
+    "quizId": "55120b67-630d-4596-a126-971d857cb8a0",
+    "sectionId": "70409d21-a2f4-40ee-9b10-117689a8a7f6",
+    "tags": [
+        "4508c4dc-dd30-4a72-9ba6-fe05d6c1fc11",
+        "db7bfd6e-0b6f-468d-a8b8-d66c8b8c5765",
+        "c6c685a9-c43c-4ddf-91bd-438455d874ca",
+        "20f06b0a-7647-4395-b8d4-da2aaacd088c",
+        "81248905-1c6a-4034-a66f-73a8dd6690be",
+        "d2c94afb-fd87-40e5-bbe4-12ca42abb006"
+    ],
+    "time": 1,
+    "title": "<p class=\"stem_paragraph \">After Ken Dial had his &ldquo;&lsquo;aha&rsquo; moment&rdquo; (<span class=\"line-ref\">{line:VH172312_7}</span>), he</p>\n",
+    "updatedAt": "2023-07-31T13:37:53.191Z",
+    "userId": "64c4788a-a9a2-49fc-a538-23bf6b103d2c",
+    "__typename": "Question"
+}

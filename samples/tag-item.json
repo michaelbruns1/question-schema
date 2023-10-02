@@ -1,0 +1,17 @@
+{
+    "$schema": "../schemas/tag-schema.json",
+    "id": "fa876b67-f6ba-4bad-b3dd-f035b9f8995b",
+    "assetType": "TAG",
+    "createdAt": "2023-07-27T06:47:36.679Z",
+    "isGlobal": "TRUE",
+    "level": 3,
+    "parent": "7e9f2a0c-4115-411c-a9ff-bf047cd74293/6e94eb52-cc96-4fbe-8f11-35c12bc9f8af",
+    "parentId": "7e9f2a0c-4115-411c-a9ff-bf047cd74293",
+    "quizType": "SAT",
+    "section": "MATH",
+    "tagType": "CONTENT",
+    "title": "1. Make strategic use of algebraic structure, the properties of operations, and reasoning about equality to\r\nd. solve polynomial equations in one variable that are written in factored form;",
+    "updatedAt": "2023-07-27T06:47:36.679Z",
+    "userId": "64c4788a-a9a2-49fc-a538-23bf6b103d2c",
+    "__typename": "Tag"
+}

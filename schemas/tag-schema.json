@@ -1,0 +1,96 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "title": "Question Tag Schema",
+    "description": "This schema represents a Tag used for categorizing and referencing a question for a test.",
+    "properties": {
+        "id": {
+            "description": "Unique identifier for the tag",
+            "$ref": "./common-patterns.jschema#/properties/uuid"
+        },
+        "assetType": {
+            "type": "string",
+            "enum": ["TAG"],
+            "description": "Indicates the type of the asset. Currently, all records have 'TAG' as assetType. This field allows for potential future scaling and diversification of asset types."
+        },
+        "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of when the tag was created"
+        },
+        "isGlobal": {
+            "type": "string",
+            "enum": [
+                "TRUE",
+                "FALSE"
+            ],
+            "description": "Indicates whether the tag is available for use by all B2B companies creating tests. If 'TRUE', the tag is global and can potentially appear as an optional parameter for companies specifying relevant test types, like SAT."
+        },
+        "level": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "The hierarchical level of the tag. The root level is 1 and increases for each subsequent level of child tags."
+        },
+        "parent": {
+            "type": "string",
+            "description": "For level 1 tags, parent is always 'ROOT'. For tags of level 2 or higher, parent is the ID path from the root to the immediate parent."
+        },
+        "parentId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "For level 1 tags, parentId is the same as the 'id' of the tag. For tags of level 2 or higher, parentId is the ID of the immediate parent."
+        },
+        "quizType": {
+            "type": "string",
+            "description": "This represents the type of exam that the tag can be applied to. While currently a string, ideal representation would be an array to allow for a tag to apply to multiple exam types."
+        },
+        "section": {
+            "type": "string",
+            "description": "Represents a sub-grouping of questions within an exam. A section does not always have to be distinct, and can overlap with other sections (e.g., reading and writing questions appearing in the same block)."
+        },
+        "tagType": {
+            "type": "string",
+            "enum": [
+                "CONTENT",
+                "GRADE",
+                "SUBSCORE",
+                "DIFFICULTY",
+                "CROSS-TEST"
+            ],
+            "description": "Specifies the type of the tag, serving as a dimension for categorizing questions. It also provides a way to analyze student performance when a question is answered. The 'tagType' can be one of several values, namely 'Content', 'grade', 'subscore', 'difficulty', or 'cross-score'."
+        },
+        "title": {
+            "type": "string",
+            "description": "The displayed title of the tag. It can range from a short word or phrase to a long description."
+        },
+        "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of when the tag was last updated in the database. This field is managed by DynamoDB."
+        },
+        "userId": {
+            "description": "Identifier of the user who last updated or created the tag. This field is managed by DynamoDB.",
+            "$ref": "./common-patterns.jschema#/properties/uuid"
+        },
+        "__typename": {
+            "type": "string",
+            "description": "Typically used in GraphQL to store the name of the object type. In this context, it is the same as 'assetType', and for all current records, the value is 'Tag'.",
+            "enum": ["Tag"]
+        }
+    },
+    "required": [
+        "id",
+        "createdAt",
+        "isGlobal",
+        "level",
+        "parent",
+        "parentId",
+        "quizType",
+        "section",
+        "tagType",
+        "title",
+        "updatedAt",
+        "userId",
+        "__typename"
+    ]
+}
