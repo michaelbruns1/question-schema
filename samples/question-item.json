@@ -1,5 +1,5 @@
 {
-    "$schema": "../schemas/question-schema.jschema",
+    "$schema": "../schemas/question-schema.json",
     "id": "6af15f0e-409b-4cf7-be2e-b0704b319a76",
     "answer": {
         "answerType": "SINGLE_CORRECT",
