@@ -1,12 +1,12 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
         "id": {
-            "$ref": "./common-patterns.jschema#/properties/uuid",
+            "$ref": "./common-patterns.json#/properties/uuid",
             "description": "A unique identifier for the object, uuid string. This includes hyphens, conforming to UUID pattern."
         },
-        "answer": {"$ref": "#/$defs/answer_type"},
+        "answer": {"$ref": "#/definitions/answer_type"},
         "assetType": {
             "type": "string",
             "enum": ["QUESTION"],
@@ -22,15 +22,15 @@
         },
         "passageId": {"type": "string"},
         "quizId": {
-            "$ref": "./common-patterns.jschema#/properties/uuid",
+            "$ref": "./common-patterns.json#/properties/uuid",
             "description": "A quiz id represents a specific quiz like SAT, ACT, etc"
         },
         "sectionId": {
-            "$ref": "./common-patterns.jschema#/properties/uuid",
+            "$ref": "./common-patterns.json#/properties/uuid",
             "description": "A section here refers to an identifier that represents a section object of an exam object that incorporates questions that are answered within the same group"
         },
         "tags": {
-            "$ref": "#/$defs/choices_type",
+            "$ref": "#/definitions/choices_type",
             "description": "These are the actual tags connecting the question to specific content, grade, subscore, difficulty, and cross-score parameters"
         },
         "time": {
@@ -46,7 +46,7 @@
             "format": "date-time"
         },
         "userId": {
-            "$ref": "./common-patterns.jschema#/properties/uuid",
+            "$ref": "./common-patterns.json#/properties/uuid",
             "description": "Identifier of the user who last updated or created the tag. This field is managed by DynamoDB."
         },
         "__typename": {
@@ -70,7 +70,7 @@
         "userId",
         "__typename"
     ],
-    "$defs": {
+    "definitions": {
         "choices_type": {
             "type": "array",
             "minItems": 1,
@@ -87,7 +87,7 @@
                     ],
                     "description": "For definition of SPR - Student Produced Response, see https://satsuite.collegeboard.org/digital/whats-on-the-test/math/student-produced"
                 },
-                "choices": {"$ref": "#/$defs/choices_type"},
+                "choices": {"$ref": "#/definitions/choices_type"},
                 "isCorrect": {"type": "string"},
                 "rationale": {
                     "type": "string",
