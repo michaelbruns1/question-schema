@@ -6,7 +6,7 @@
     "properties": {
         "id": {
             "description": "Unique identifier for the tag",
-            "$ref": "common-patterns.json#/properties/uuid"
+            "$ref": "./common-patterns.json#/properties/uuid"
         },
         "assetType": {
             "type": "string",
@@ -70,7 +70,7 @@
         },
         "userId": {
             "description": "Identifier of the user who last updated or created the tag. This field is managed by DynamoDB.",
-            "$ref": "common-patterns.json#/properties/uuid"
+            "$ref": "./common-patterns.json#/properties/uuid"
         },
         "__typename": {
             "type": "string",

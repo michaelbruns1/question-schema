@@ -3,7 +3,6 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Documentation question-schema.json</title>
       <link rel="stylesheet" href="docHtml.css" type="text/css"><script>var sourceBoxes= new Array('source_#/schema', 
-				'source_common-patterns.json#/properties/uuid', 
 				'source_#/properties/id', 
 				'source_#/properties/answer', 
 				'source_#/properties/assetType', 
@@ -18,7 +17,7 @@
 				'source_#/properties/updatedAt', 
 				'source_#/properties/userId', 
 				'source_#/properties/__typename', 
-				'source_tag-schema.json#/properties/id', 
+				'source_common-patterns.json#/properties/uuid', 
 				'source_#/definitions/answer_type', 
 				'source_#/definitions/answer_type/properties/answerType', 
 				'source_#/definitions/choices_type', 
@@ -28,7 +27,9 @@
 				'source_#/definitions/answer_type/properties/rationale', 
 				'source_#/definitions/answer_type/properties/video', 
 				'source_#/definitions/tags', 
-				'source_#/definitions/tags/items');
+				'source_#/definitions/tags/items', 
+				'source_./common-patterns.json#/properties/uuid', 
+				'source_./tag-schema.json#/properties/id');
 var annotationsBoxes= new Array('annotations_#/properties/id', 
 				'annotations_#/properties/assetType', 
 				'annotations_#/properties/quizId', 
@@ -38,12 +39,11 @@ var annotationsBoxes= new Array('annotations_#/properties/id',
 				'annotations_#/properties/title', 
 				'annotations_#/properties/userId', 
 				'annotations_#/properties/__typename', 
-				'annotations_tag-schema.json#/properties/id', 
 				'annotations_#/definitions/answer_type/properties/answerType', 
 				'annotations_#/definitions/answer_type/properties/rationale', 
-				'annotations_#/definitions/answer_type/properties/video');
+				'annotations_#/definitions/answer_type/properties/video', 
+				'annotations_./tag-schema.json#/properties/id');
 var diagramBoxes= new Array('diagram_#/schema', 
-				'diagram_common-patterns.json#/properties/uuid', 
 				'diagram_#/properties/id', 
 				'diagram_#/properties/answer', 
 				'diagram_#/properties/assetType', 
@@ -58,7 +58,7 @@ var diagramBoxes= new Array('diagram_#/schema',
 				'diagram_#/properties/updatedAt', 
 				'diagram_#/properties/userId', 
 				'diagram_#/properties/__typename', 
-				'diagram_tag-schema.json#/properties/id', 
+				'diagram_common-patterns.json#/properties/uuid', 
 				'diagram_#/definitions/answer_type', 
 				'diagram_#/definitions/answer_type/properties/answerType', 
 				'diagram_#/definitions/choices_type', 
@@ -68,20 +68,22 @@ var diagramBoxes= new Array('diagram_#/schema',
 				'diagram_#/definitions/answer_type/properties/rationale', 
 				'diagram_#/definitions/answer_type/properties/video', 
 				'diagram_#/definitions/tags', 
-				'diagram_#/definitions/tags/items');
+				'diagram_#/definitions/tags/items', 
+				'diagram_./common-patterns.json#/properties/uuid', 
+				'diagram_./tag-schema.json#/properties/id');
 var propertiesBoxes= new Array('properties_#/schema', 
 				'properties_#/definitions/answer_type');
-var constraintsBoxes= new Array('constraints_common-patterns.json#/properties/uuid', 
-				'constraints_#/properties/createdAt', 
+var constraintsBoxes= new Array('constraints_#/properties/createdAt', 
 				'constraints_#/properties/updatedAt', 
+				'constraints_common-patterns.json#/properties/uuid', 
 				'constraints_#/definitions/choices_type', 
 				'constraints_#/definitions/answer_type/properties/video', 
-				'constraints_#/definitions/tags');
+				'constraints_#/definitions/tags', 
+				'constraints_./common-patterns.json#/properties/uuid');
 var enumerationsBoxes= new Array('enumeration_#/properties/assetType', 
 				'enumeration_#/properties/__typename', 
 				'enumeration_#/definitions/answer_type/properties/answerType');
 var combinedBoxes= new Array('combined_#/schema', 
-				'combined_common-patterns.json#/properties/uuid', 
 				'combined_#/properties/id', 
 				'combined_#/properties/answer', 
 				'combined_#/properties/assetType', 
@@ -96,7 +98,7 @@ var combinedBoxes= new Array('combined_#/schema',
 				'combined_#/properties/updatedAt', 
 				'combined_#/properties/userId', 
 				'combined_#/properties/__typename', 
-				'combined_tag-schema.json#/properties/id', 
+				'combined_common-patterns.json#/properties/uuid', 
 				'combined_#/definitions/answer_type', 
 				'combined_#/definitions/answer_type/properties/answerType', 
 				'combined_#/definitions/choices_type', 
@@ -106,9 +108,10 @@ var combinedBoxes= new Array('combined_#/schema',
 				'combined_#/definitions/answer_type/properties/rationale', 
 				'combined_#/definitions/answer_type/properties/video', 
 				'combined_#/definitions/tags', 
-				'combined_#/definitions/tags/items');
-var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid', 
-				'usedBy_#/properties/id', 
+				'combined_#/definitions/tags/items', 
+				'combined_./common-patterns.json#/properties/uuid', 
+				'combined_./tag-schema.json#/properties/id');
+var usedByBoxes= new Array('usedBy_#/properties/id', 
 				'usedBy_#/properties/answer', 
 				'usedBy_#/properties/assetType', 
 				'usedBy_#/properties/createdAt', 
@@ -122,7 +125,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
 				'usedBy_#/properties/updatedAt', 
 				'usedBy_#/properties/userId', 
 				'usedBy_#/properties/__typename', 
-				'usedBy_tag-schema.json#/properties/id', 
+				'usedBy_common-patterns.json#/properties/uuid', 
 				'usedBy_#/definitions/answer_type', 
 				'usedBy_#/definitions/answer_type/properties/answerType', 
 				'usedBy_#/definitions/choices_type', 
@@ -132,7 +135,9 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
 				'usedBy_#/definitions/answer_type/properties/rationale', 
 				'usedBy_#/definitions/answer_type/properties/video', 
 				'usedBy_#/definitions/tags', 
-				'usedBy_#/definitions/tags/items');
+				'usedBy_#/definitions/tags/items', 
+				'usedBy_./common-patterns.json#/properties/uuid', 
+				'usedBy_./tag-schema.json#/properties/id');
 
             
             var button_prefix = 'button_';
@@ -474,7 +479,6 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                               <td class="componentGroup"></td>
                               <td class="componentGroup">
                                  <div id="Main_Properties" class="componentGroup" style="display:block">
-                                    <div><b><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></b></div>
                                     <div><b><b><a href="#/properties/id">id</a></b></b></div>
                                     <div><b><b><a href="#/properties/answer">answer</a></b></b></div>
                                     <div><b><b><a href="#/properties/assetType">assetType</a></b></b></div>
@@ -489,7 +493,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                     <div><b><b><a href="#/properties/updatedAt">updatedAt</a></b></b></div>
                                     <div><b><b><a href="#/properties/userId">userId</a></b></b></div>
                                     <div><b><b><a href="#/properties/__typename">__typename</a></b></b></div>
-                                    <div><b><b><a href="#tag-schema.json#/properties/id">id</a></b></b></div>
+                                    <div><b><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></b></div>
                                  </div>
                               </td>
                            </tr>
@@ -584,7 +588,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                              </td>
                                              <td class="diagram">
                                                 <div id="diagram_#/schema" style="display:block"><map name="schema">
-                                                      <area shape="rect" alt="#/properties/id" coords="146,96,382,140" href="#/properties/id">
+                                                      <area shape="rect" alt="#/properties/id" coords="146,96,388,140" href="#/properties/id">
                                                       
                                                       <area shape="rect" alt="#/properties/answer" coords="146,195,320,239" href="#/properties/answer">
                                                       
@@ -596,9 +600,9 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                       
                                                       <area shape="rect" alt="#/properties/passageId" coords="146,513,222,557" href="#/properties/passageId">
                                                       
-                                                      <area shape="rect" alt="#/properties/quizId" coords="146,567,382,611" href="#/properties/quizId">
+                                                      <area shape="rect" alt="#/properties/quizId" coords="146,567,388,611" href="#/properties/quizId">
                                                       
-                                                      <area shape="rect" alt="#/properties/sectionId" coords="146,652,382,696" href="#/properties/sectionId">
+                                                      <area shape="rect" alt="#/properties/sectionId" coords="146,652,388,696" href="#/properties/sectionId">
                                                       
                                                       <area shape="rect" alt="#/properties/tags" coords="146,751,320,795" href="#/properties/tags">
                                                       
@@ -608,7 +612,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                       
                                                       <area shape="rect" alt="#/properties/updatedAt" coords="146,1034,249,1097" href="#/properties/updatedAt">
                                                       
-                                                      <area shape="rect" alt="#/properties/userId" coords="146,1107,382,1151" href="#/properties/userId">
+                                                      <area shape="rect" alt="#/properties/userId" coords="146,1107,388,1151" href="#/properties/userId">
                                                       
                                                       <area shape="rect" alt="#/properties/__typename" coords="146,1206,243,1269" href="#/properties/__typename">
                                                       
@@ -680,7 +684,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
 <span style="color: rgb(0,0,0)">  </span><span style="color: rgb(40,40,40)">]</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"properties"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"id"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"A unique identifier for the object, uuid string. This includes hyphens, conforming to UUID pattern."</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"answer"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"#/definitions/answer_type"</span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
@@ -699,11 +703,11 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"passageId"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,150)">"type"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"string"</span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"quizId"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"A quiz id represents a specific quiz like SAT, ACT, etc"</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"sectionId"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"A section here refers to an identifier that represents a section object of an exam object that incorporates questions that are answered within the same group"</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"tags"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
@@ -723,7 +727,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
 <span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"format"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"date-time"</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"userId"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">      </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"Identifier of the user who last updated or created the tag. This field is managed by DynamoDB."</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">    </span><span style="color: rgb(0,0,150)">"__typename"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
@@ -787,111 +791,6 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                  <td class="rt_lineBottom"></td>
                                  <td class="rt_cornerBottomRight"></td>
                               </tr>
-                           </table><br><a id="common-patterns.json#/properties/uuid"></a><div class="componentTitle">Property schema <span class="Name">uuid</span><span class="qname"></span></div>
-                           <table class="rt">
-                              <tr>
-                                 <td class="rt_cornerTopLeft"></td>
-                                 <td class="rt_lineTop"></td>
-                                 <td class="rt_cornerTopRight"></td>
-                              </tr>
-                              <tr>
-                                 <td class="rt_lineLeft"></td>
-                                 <td class="rt_content">
-                                    <table class="component">
-                                       <tbody> 
-                                          
-                                          <tr>
-                                             <td class="firstColumn">
-                                                <div class="floatLeft"><b>Diagram</b></div>
-                                                <div class="floatRight"><input id="button_diagram_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_common-patterns.json#/properties/uuid');" class="control"></div>
-                                             </td>
-                                             <td class="diagram">
-                                                <div id="diagram_common-patterns.json#/properties/uuid" style="display:block"><img src="diagramImages/common_patterns.jsonschema_properties_uuid.png" alt="diagram"></div>
-                                             </td>
-                                          </tr>
-                                          
-                                          <tr>
-                                             <td class="firstColumn"><b>Type</b></td>
-                                             <td><b>string</b></td>
-                                          </tr>
-                                          
-                                          <tr>
-                                             <td class="firstColumn">
-                                                <div class="floatLeft"><b>Constraints</b></div>
-                                                <div class="floatRight"><input id="button_constraints_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('constraints_common-patterns.json#/properties/uuid');" class="control"></div>
-                                             </td>
-                                             <td>
-                                                <div id="constraints_common-patterns.json#/properties/uuid" style="display:block">
-                                                   <div class="annotation">
-                                                      <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
-                                                         <tr>
-                                                            <td>
-                                                               <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="DetailName">Pattern : </span><span class="tT">^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$</span></pre><br></td>
-                                                         </tr>
-                                                      </table>
-                                                   </div>
-                                                </div>
-                                             </td>
-                                          </tr>
-                                          
-                                          <tr>
-                                             <td class="firstColumn">
-                                                <div class="floatLeft"><b>Used by</b></div>
-                                                <div class="floatRight"><input id="button_usedBy_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_common-patterns.json#/properties/uuid');" class="control"></div>
-                                             </td>
-                                             <td>
-                                                <div id="usedBy_common-patterns.json#/properties/uuid" style="display:block">
-                                                   <table class="propertiesTable">
-                                                      <tr>
-                                                         <td class="firstColumn" style="white-space: nowrap; font-family: Segoe UI; font-size: 8pt; color: #808080;">Schema</td>
-                                                      </tr>
-                                                      <tr class="firstColumn" style="white-space: nowrap;">
-                                                         <td><span class="Name"><a href="#/properties/id">id</a></span></td>
-                                                      </tr>
-                                                      <tr class="firstColumn" style="white-space: nowrap;">
-                                                         <td><span class="Name"><a href="#/definitions/tags/items">tags/items</a></span></td>
-                                                      </tr>
-                                                      <tr class="firstColumn" style="white-space: nowrap;">
-                                                         <td><span class="Name"><a href="#/schema">#/schema</a></span></td>
-                                                      </tr>
-                                                   </table>
-                                                </div>
-                                             </td>
-                                          </tr>
-                                          
-                                          <tr>
-                                             <td class="firstColumn">
-                                                <div class="floatLeft"><b>Source</b></div>
-                                                <div class="floatRight"><input id="button_source_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_common-patterns.json#/properties/uuid');" class="control"></div>
-                                             </td>
-                                             <td>
-                                                <div id="source_common-patterns.json#/properties/uuid" style="display:block">
-                                                   <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
-                                                      <tr>
-                                                         <td>
-                                                            <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
-<span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"uuid"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"type"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"string"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"pattern"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
-
-</span></pre>
-                                                         </td>
-                                                      </tr>
-                                                   </table>
-                                                </div>
-                                             </td>
-                                          </tr>
-                                          </tbody>
-                                    </table>
-                                 </td>
-                                 <td class="rt_lineRight"></td>
-                              </tr>
-                              <tr>
-                                 <td class="rt_cornerBottomLeft"></td>
-                                 <td class="rt_lineBottom"></td>
-                                 <td class="rt_cornerBottomRight"></td>
-                              </tr>
                            </table><br><a id="/properties/id"></a><div class="componentTitle">Definition schema <span class="Name">id</span><span class="qname"></span></div>
                            <table class="rt">
                               <tr>
@@ -932,7 +831,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                              </td>
                                              <td class="diagram">
                                                 <div id="diagram_#/properties/id" style="display:block"><map name="schema/properties/id">
-                                                      <area shape="rect" alt="#common-patterns.json#/properties/uuid" coords="0,0,236,44" href="#common-patterns.json#/properties/uuid">
+                                                      <area shape="rect" alt="#./common-patterns.json#/properties/uuid" coords="0,0,242,44" href="#./common-patterns.json#/properties/uuid">
                                                       
                                                       </map><img src="diagramImages/schema_properties_id.png" useMap="#schema/properties/id" alt="diagram"></div>
                                              </td>
@@ -945,7 +844,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           
                                           <tr>
                                              <td class="firstColumn"><b>Refers </b></td>
-                                             <td><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></td>
+                                             <td><b><a href="#./common-patterns.json#/properties/uuid">uuid</a></b></td>
                                           </tr>
                                           
                                           <tr>
@@ -979,7 +878,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                          <td>
                                                             <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
 <span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"id"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"A unique identifier for the object, uuid string. This includes hyphens, conforming to UUID pattern."</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
 
@@ -1510,7 +1409,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                              </td>
                                              <td class="diagram">
                                                 <div id="diagram_#/properties/quizId" style="display:block"><map name="schema/properties/quizId">
-                                                      <area shape="rect" alt="#common-patterns.json#/properties/uuid" coords="0,0,236,44" href="#common-patterns.json#/properties/uuid">
+                                                      <area shape="rect" alt="#./common-patterns.json#/properties/uuid" coords="0,0,242,44" href="#./common-patterns.json#/properties/uuid">
                                                       
                                                       </map><img src="diagramImages/schema_properties_quizId.png" useMap="#schema/properties/quizId" alt="diagram"></div>
                                              </td>
@@ -1523,7 +1422,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           
                                           <tr>
                                              <td class="firstColumn"><b>Refers </b></td>
-                                             <td><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></td>
+                                             <td><b><a href="#./common-patterns.json#/properties/uuid">uuid</a></b></td>
                                           </tr>
                                           
                                           <tr>
@@ -1557,7 +1456,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                          <td>
                                                             <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
 <span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"quizId"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"A quiz id represents a specific quiz like SAT, ACT, etc"</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
 
@@ -1622,7 +1521,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                              </td>
                                              <td class="diagram">
                                                 <div id="diagram_#/properties/sectionId" style="display:block"><map name="schema/properties/sectionId">
-                                                      <area shape="rect" alt="#common-patterns.json#/properties/uuid" coords="0,0,236,44" href="#common-patterns.json#/properties/uuid">
+                                                      <area shape="rect" alt="#./common-patterns.json#/properties/uuid" coords="0,0,242,44" href="#./common-patterns.json#/properties/uuid">
                                                       
                                                       </map><img src="diagramImages/schema_properties_sectionId.png" useMap="#schema/properties/sectionId" alt="diagram"></div>
                                              </td>
@@ -1635,7 +1534,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           
                                           <tr>
                                              <td class="firstColumn"><b>Refers </b></td>
-                                             <td><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></td>
+                                             <td><b><a href="#./common-patterns.json#/properties/uuid">uuid</a></b></td>
                                           </tr>
                                           
                                           <tr>
@@ -1669,7 +1568,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                          <td>
                                                             <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
 <span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"sectionId"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"A section here refers to an identifier that represents a section object of an exam object that incorporates questions that are answered within the same group"</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
 
@@ -2146,7 +2045,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                              </td>
                                              <td class="diagram">
                                                 <div id="diagram_#/properties/userId" style="display:block"><map name="schema/properties/userId">
-                                                      <area shape="rect" alt="#common-patterns.json#/properties/uuid" coords="0,0,236,44" href="#common-patterns.json#/properties/uuid">
+                                                      <area shape="rect" alt="#./common-patterns.json#/properties/uuid" coords="0,0,242,44" href="#./common-patterns.json#/properties/uuid">
                                                       
                                                       </map><img src="diagramImages/schema_properties_userId.png" useMap="#schema/properties/userId" alt="diagram"></div>
                                              </td>
@@ -2159,7 +2058,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           
                                           <tr>
                                              <td class="firstColumn"><b>Refers </b></td>
-                                             <td><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></td>
+                                             <td><b><a href="#./common-patterns.json#/properties/uuid">uuid</a></b></td>
                                           </tr>
                                           
                                           <tr>
@@ -2193,7 +2092,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                          <td>
                                                             <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
 <span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"userId"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"Identifier of the user who last updated or created the tag. This field is managed by DynamoDB."</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
 
@@ -2338,7 +2237,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                  <td class="rt_lineBottom"></td>
                                  <td class="rt_cornerBottomRight"></td>
                               </tr>
-                           </table><br><a id="tag-schema.json#/properties/id"></a><div class="componentTitle">Definition schema <span class="Name">id</span><span class="qname"></span></div>
+                           </table><br><a id="common-patterns.json#/properties/uuid"></a><div class="componentTitle">Property schema <span class="Name">uuid</span><span class="qname"></span></div>
                            <table class="rt">
                               <tr>
                                  <td class="rt_cornerTopLeft"></td>
@@ -2353,17 +2252,31 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           
                                           <tr>
                                              <td class="firstColumn">
-                                                <div class="floatLeft"><b>Annotations</b></div>
-                                                <div class="floatRight"><input id="button_annotations_tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('annotations_tag-schema.json#/properties/id');" class="control"></div>
+                                                <div class="floatLeft"><b>Diagram</b></div>
+                                                <div class="floatRight"><input id="button_diagram_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_common-patterns.json#/properties/uuid');" class="control"></div>
+                                             </td>
+                                             <td class="diagram">
+                                                <div id="diagram_common-patterns.json#/properties/uuid" style="display:block"><img src="diagramImages/common_patterns.jsonschema_properties_uuid.png" alt="diagram"></div>
+                                             </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn"><b>Type</b></td>
+                                             <td><b>string</b></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Constraints</b></div>
+                                                <div class="floatRight"><input id="button_constraints_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('constraints_common-patterns.json#/properties/uuid');" class="control"></div>
                                              </td>
                                              <td>
-                                                <div id="annotations_tag-schema.json#/properties/id" style="display:block">
+                                                <div id="constraints_common-patterns.json#/properties/uuid" style="display:block">
                                                    <div class="annotation">
                                                       <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
                                                          <tr>
                                                             <td>
-                                                               <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="DetailName">Description  </span><span class="tT">Unique identifier for the tag</span></pre>
-                                                            </td>
+                                                               <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="DetailName">Pattern : </span><span class="tT">^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$</span></pre><br></td>
                                                          </tr>
                                                       </table>
                                                    </div>
@@ -2373,43 +2286,20 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           
                                           <tr>
                                              <td class="firstColumn">
-                                                <div class="floatLeft"><b>Diagram</b></div>
-                                                <div class="floatRight"><input id="button_diagram_tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_tag-schema.json#/properties/id');" class="control"></div>
-                                             </td>
-                                             <td class="diagram">
-                                                <div id="diagram_tag-schema.json#/properties/id" style="display:block"><map name="tag-schema.jsonschema/properties/id">
-                                                      <area shape="rect" alt="./#common-patterns.json#/properties/uuid" coords="0,0,242,44" href="./#common-patterns.json#/properties/uuid">
-                                                      
-                                                      </map><img src="diagramImages/tag_schema.jsonschema_properties_id.png" useMap="#tag-schema.jsonschema/properties/id" alt="diagram"></div>
-                                             </td>
-                                          </tr>
-                                          
-                                          <tr>
-                                             <td class="firstColumn"><b>Type</b></td>
-                                             <td><b>reference</b></td>
-                                          </tr>
-                                          
-                                          <tr>
-                                             <td class="firstColumn"><b>Refers </b></td>
-                                             <td><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></td>
-                                          </tr>
-                                          
-                                          <tr>
-                                             <td class="firstColumn">
                                                 <div class="floatLeft"><b>Used by</b></div>
-                                                <div class="floatRight"><input id="button_usedBy_tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_tag-schema.json#/properties/id');" class="control"></div>
+                                                <div class="floatRight"><input id="button_usedBy_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_common-patterns.json#/properties/uuid');" class="control"></div>
                                              </td>
                                              <td>
-                                                <div id="usedBy_tag-schema.json#/properties/id" style="display:block">
+                                                <div id="usedBy_common-patterns.json#/properties/uuid" style="display:block">
                                                    <table class="propertiesTable">
                                                       <tr>
                                                          <td class="firstColumn" style="white-space: nowrap; font-family: Segoe UI; font-size: 8pt; color: #808080;">Schema</td>
                                                       </tr>
                                                       <tr class="firstColumn" style="white-space: nowrap;">
-                                                         <td><span class="Name"><a href="#/definitions/tags/items">tags/items</a></span></td>
+                                                         <td><span class="Name"><a href="#./tag-schema.json#/properties/id">id</a></span></td>
                                                       </tr>
                                                       <tr class="firstColumn" style="white-space: nowrap;">
-                                                         <td><span class="Name"><a href="#/definitions/tags">tags</a></span></td>
+                                                         <td><span class="Name"><a href="#/definitions/tags/items">tags/items</a></span></td>
                                                       </tr>
                                                    </table>
                                                 </div>
@@ -2419,17 +2309,17 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           <tr>
                                              <td class="firstColumn">
                                                 <div class="floatLeft"><b>Source</b></div>
-                                                <div class="floatRight"><input id="button_source_tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_tag-schema.json#/properties/id');" class="control"></div>
+                                                <div class="floatRight"><input id="button_source_common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_common-patterns.json#/properties/uuid');" class="control"></div>
                                              </td>
                                              <td>
-                                                <div id="source_tag-schema.json#/properties/id" style="display:block">
+                                                <div id="source_common-patterns.json#/properties/uuid" style="display:block">
                                                    <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
                                                       <tr>
                                                          <td>
                                                             <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
-<span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"id"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"Unique identifier for the tag"</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"uuid"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"type"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"string"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"pattern"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
 
 </span></pre>
@@ -2439,10 +2329,6 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                 </div>
                                              </td>
                                           </tr>
-                                          
-                                          
-                                          
-                                          
                                           </tbody>
                                     </table>
                                  </td>
@@ -3347,7 +3233,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                              </td>
                                              <td class="diagram">
                                                 <div id="diagram_#/definitions/tags" style="display:block"><map name="schema/definitions/tags">
-                                                      <area shape="rect" alt="#/definitions/tags/items" coords="222,9,419,54" href="#/definitions/tags/items">
+                                                      <area shape="rect" alt="#/definitions/tags/items" coords="222,9,425,54" href="#/definitions/tags/items">
                                                       
                                                       </map><img src="diagramImages/schema_definitions_tags.png" useMap="#schema/definitions/tags" alt="diagram"></div>
                                              </td>
@@ -3427,7 +3313,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                             <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
 <span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"tags"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"type"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"array"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
-<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"items"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"tag-schema.json#/properties/id"</span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"items"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./tag-schema.json#/properties/id"</span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(0,0,0)"></span>
 <span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
 
 </span></pre>
@@ -3471,7 +3357,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                              </td>
                                              <td class="diagram">
                                                 <div id="diagram_#/definitions/tags/items" style="display:block"><map name="schema/definitions/tags/items">
-                                                      <area shape="rect" alt="#tag-schema.json#/properties/id" coords="0,0,197,45" href="#tag-schema.json#/properties/id">
+                                                      <area shape="rect" alt="#./tag-schema.json#/properties/id" coords="0,0,203,45" href="#./tag-schema.json#/properties/id">
                                                       
                                                       </map><img src="diagramImages/schema_definitions_tags_items.png" useMap="#schema/definitions/tags/items" alt="diagram"></div>
                                              </td>
@@ -3484,7 +3370,7 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                           
                                           <tr>
                                              <td class="firstColumn"><b>Refers </b></td>
-                                             <td><b><a href="#tag-schema.json#/properties/id">id</a></b></td>
+                                             <td><b><a href="#./tag-schema.json#/properties/id">id</a></b></td>
                                           </tr>
                                           
                                           <tr>
@@ -3517,7 +3403,224 @@ var usedByBoxes= new Array('usedBy_common-patterns.json#/properties/uuid',
                                                       <tr>
                                                          <td>
                                                             <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
-<span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"items"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"tag-schema.json#/properties/id"</span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"items"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./tag-schema.json#/properties/id"</span><span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
+
+</span></pre>
+                                                         </td>
+                                                      </tr>
+                                                   </table>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          
+                                          
+                                          
+                                          
+                                          </tbody>
+                                    </table>
+                                 </td>
+                                 <td class="rt_lineRight"></td>
+                              </tr>
+                              <tr>
+                                 <td class="rt_cornerBottomLeft"></td>
+                                 <td class="rt_lineBottom"></td>
+                                 <td class="rt_cornerBottomRight"></td>
+                              </tr>
+                           </table><br><a id="./common-patterns.json#/properties/uuid"></a><div class="componentTitle">Schema <span class="Name">uuid</span><span class="qname"></span></div>
+                           <table class="rt">
+                              <tr>
+                                 <td class="rt_cornerTopLeft"></td>
+                                 <td class="rt_lineTop"></td>
+                                 <td class="rt_cornerTopRight"></td>
+                              </tr>
+                              <tr>
+                                 <td class="rt_lineLeft"></td>
+                                 <td class="rt_content">
+                                    <table class="component">
+                                       <tbody> 
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Diagram</b></div>
+                                                <div class="floatRight"><input id="button_diagram_./common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_./common-patterns.json#/properties/uuid');" class="control"></div>
+                                             </td>
+                                             <td class="diagram">
+                                                <div id="diagram_./common-patterns.json#/properties/uuid" style="display:block"><img src="diagramImages/schema_properties_id.png" alt="diagram"></div>
+                                             </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn"><b>Type</b></td>
+                                             <td><b>string</b></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Constraints</b></div>
+                                                <div class="floatRight"><input id="button_constraints_./common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('constraints_./common-patterns.json#/properties/uuid');" class="control"></div>
+                                             </td>
+                                             <td>
+                                                <div id="constraints_./common-patterns.json#/properties/uuid" style="display:block">
+                                                   <div class="annotation">
+                                                      <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                                         <tr>
+                                                            <td>
+                                                               <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="DetailName">Pattern : </span><span class="tT">^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$</span></pre><br></td>
+                                                         </tr>
+                                                      </table>
+                                                   </div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Used by</b></div>
+                                                <div class="floatRight"><input id="button_usedBy_./common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_./common-patterns.json#/properties/uuid');" class="control"></div>
+                                             </td>
+                                             <td>
+                                                <div id="usedBy_./common-patterns.json#/properties/uuid" style="display:block">
+                                                   <table class="propertiesTable">
+                                                      <tr>
+                                                         <td class="firstColumn" style="white-space: nowrap; font-family: Segoe UI; font-size: 8pt; color: #808080;">Schema</td>
+                                                      </tr>
+                                                      <tr class="firstColumn" style="white-space: nowrap;">
+                                                         <td><span class="Name"><a href="#/properties/id">id</a></span></td>
+                                                      </tr>
+                                                      <tr class="firstColumn" style="white-space: nowrap;">
+                                                         <td><span class="Name"><a href="#/schema">#/schema</a></span></td>
+                                                      </tr>
+                                                   </table>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Source</b></div>
+                                                <div class="floatRight"><input id="button_source_./common-patterns.json#/properties/uuid" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_./common-patterns.json#/properties/uuid');" class="control"></div>
+                                             </td>
+                                             <td>
+                                                <div id="source_./common-patterns.json#/properties/uuid" style="display:block">
+                                                   <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                                      <tr>
+                                                         <td>
+                                                            <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
+<span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"uuid"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"type"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"string"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"pattern"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
+
+</span></pre>
+                                                         </td>
+                                                      </tr>
+                                                   </table>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          </tbody>
+                                    </table>
+                                 </td>
+                                 <td class="rt_lineRight"></td>
+                              </tr>
+                              <tr>
+                                 <td class="rt_cornerBottomLeft"></td>
+                                 <td class="rt_lineBottom"></td>
+                                 <td class="rt_cornerBottomRight"></td>
+                              </tr>
+                           </table><br><a id="./tag-schema.json#/properties/id"></a><div class="componentTitle">Definition schema <span class="Name">id</span><span class="qname"></span></div>
+                           <table class="rt">
+                              <tr>
+                                 <td class="rt_cornerTopLeft"></td>
+                                 <td class="rt_lineTop"></td>
+                                 <td class="rt_cornerTopRight"></td>
+                              </tr>
+                              <tr>
+                                 <td class="rt_lineLeft"></td>
+                                 <td class="rt_content">
+                                    <table class="component">
+                                       <tbody> 
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Annotations</b></div>
+                                                <div class="floatRight"><input id="button_annotations_./tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('annotations_./tag-schema.json#/properties/id');" class="control"></div>
+                                             </td>
+                                             <td>
+                                                <div id="annotations_./tag-schema.json#/properties/id" style="display:block">
+                                                   <div class="annotation">
+                                                      <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                                         <tr>
+                                                            <td>
+                                                               <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="DetailName">Description  </span><span class="tT">Unique identifier for the tag</span></pre>
+                                                            </td>
+                                                         </tr>
+                                                      </table>
+                                                   </div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Diagram</b></div>
+                                                <div class="floatRight"><input id="button_diagram_./tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('diagram_./tag-schema.json#/properties/id');" class="control"></div>
+                                             </td>
+                                             <td class="diagram">
+                                                <div id="diagram_./tag-schema.json#/properties/id" style="display:block"><map name="schema/definitions/tags/items">
+                                                      <area shape="rect" alt="./tag-schema.json#/properties/id" coords="0,0,203,45" href="./tag-schema.json#/properties/id">
+                                                      
+                                                      </map><img src="diagramImages/schema_definitions_tags_items.png" useMap="#schema/definitions/tags/items" alt="diagram"></div>
+                                             </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn"><b>Type</b></td>
+                                             <td><b>reference</b></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn"><b>Refers </b></td>
+                                             <td><b><a href="#common-patterns.json#/properties/uuid">uuid</a></b></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Used by</b></div>
+                                                <div class="floatRight"><input id="button_usedBy_./tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('usedBy_./tag-schema.json#/properties/id');" class="control"></div>
+                                             </td>
+                                             <td>
+                                                <div id="usedBy_./tag-schema.json#/properties/id" style="display:block">
+                                                   <table class="propertiesTable">
+                                                      <tr>
+                                                         <td class="firstColumn" style="white-space: nowrap; font-family: Segoe UI; font-size: 8pt; color: #808080;">Schema</td>
+                                                      </tr>
+                                                      <tr class="firstColumn" style="white-space: nowrap;">
+                                                         <td><span class="Name"><a href="#/definitions/tags/items">tags/items</a></span></td>
+                                                      </tr>
+                                                      <tr class="firstColumn" style="white-space: nowrap;">
+                                                         <td><span class="Name"><a href="#/definitions/tags">tags</a></span></td>
+                                                      </tr>
+                                                   </table>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          
+                                          <tr>
+                                             <td class="firstColumn">
+                                                <div class="floatLeft"><b>Source</b></div>
+                                                <div class="floatRight"><input id="button_source_./tag-schema.json#/properties/id" type="image" src="img/btM.gif" alt="expand/collapse" onclick="switchState('source_./tag-schema.json#/properties/id');" class="control"></div>
+                                             </td>
+                                             <td>
+                                                <div id="source_./tag-schema.json#/properties/id" style="display:block">
+                                                   <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                                      <tr>
+                                                         <td>
+                                                            <pre style="white-space: pre-wrap;       /* Since CSS 2.1 */                                                 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                 white-space: -pre-wrap;      /* Opera 4-6 */                                                 white-space: -o-pre-wrap;    /* Opera 7 */                                                 word-wrap: break-word;  "><span class="tEl">
+<span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(0,0,150)">"id"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(40,40,40)">{</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"$ref"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"./common-patterns.json#/properties/uuid"</span><span style="color: rgb(100,0,50)">,</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(0,0,0)">  </span><span style="color: rgb(0,0,150)">"description"</span><span style="color: rgb(100,0,50)">:</span><span style="color: rgb(0,0,0)"> </span><span style="color: rgb(153,51,0)">"Unique identifier for the tag"</span><span style="color: rgb(0,0,0)"></span>
+<span style="color: rgb(40,40,40)">}</span><span style="color: rgb(40,40,40)"></span><span style="color: rgb(0,0,0)"></span>
 
 </span></pre>
                                                          </td>
