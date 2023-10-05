@@ -6,7 +6,7 @@
     "properties": {
         "id": {
             "description": "Unique identifier for the tag",
-            "$ref": "./common-patterns.json#/properties/uuid"
+            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/definitions/uuid"
         },
         "assetType": {
             "type": "string",
