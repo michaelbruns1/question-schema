@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json",
+  "$id": "file:/C:/Users/BRUNS/Documents/michaelbruns1/mjb-artifact-repository/json-schema-demo/git/schemas/common-patterns.json",
   "title": "Common Patterns",
   "description": "Description of the schema",
   "type": "object",
