@@ -1,9 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://michaelbruns1.github.io/schemas/schemas/question-schema.json",
     "type": "object",
     "properties": {
         "id": {
-            "$ref": "./common-patterns.json#/properties/uuid",
+            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/properties/uuid",
             "description": "A unique identifier for the object, uuid string. This includes hyphens, conforming to UUID pattern."
         },
         "answer": {"$ref": "#/definitions/answer_type"},
@@ -22,11 +23,11 @@
         },
         "passageId": {"type": "string"},
         "quizId": {
-            "$ref": "./common-patterns.json#/properties/uuid",
+            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/properties/uuid",
             "description": "A quiz id represents a specific quiz like SAT, ACT, etc"
         },
         "sectionId": {
-            "$ref": "./common-patterns.json#/properties/uuid",
+            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/properties/uuid",
             "description": "A section here refers to an identifier that represents a section object of an exam object that incorporates questions that are answered within the same group"
         },
         "tags": {
@@ -46,7 +47,7 @@
             "format": "date-time"
         },
         "userId": {
-            "$ref": "./common-patterns.json#/properties/uuid",
+            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/properties/uuid",
             "description": "Identifier of the user who last updated or created the tag. This field is managed by DynamoDB."
         },
         "__typename": {
@@ -107,7 +108,7 @@
         },
         "tags": {
             "type": "array",
-            "items": {"$ref": "./tag-schema.json#/properties/id"}
+            "items": {"$ref": "https://michaelbruns1.github.io/schemas/schemas/tag-schema.json#/properties/id"}
         }
     }
 }
