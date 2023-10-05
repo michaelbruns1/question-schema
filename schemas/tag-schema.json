@@ -1,12 +1,13 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://michaelbruns1.github.io/schemas/schemas/tag-schema.json",
     "type": "object",
     "title": "Question Tag Schema",
     "description": "This schema represents a Tag used for categorizing and referencing a question for a test.",
     "properties": {
         "id": {
             "description": "Unique identifier for the tag",
-            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/definitions/uuid"
+            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/properties/uuid"
         },
         "assetType": {
             "type": "string",
@@ -70,7 +71,7 @@
         },
         "userId": {
             "description": "Identifier of the user who last updated or created the tag. This field is managed by DynamoDB.",
-            "$ref": "./common-patterns.json#/properties/uuid"
+            "$ref": "https://michaelbruns1.github.io/schemas/schemas/common-patterns.json#/properties/uuid"
         },
         "__typename": {
             "type": "string",
